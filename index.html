@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>1996 - DengSir</title>
+    <title>执子之手，与子偕老</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <style>
@@ -97,11 +97,11 @@
 
 <body>
 <div class="cs">
-    <img src="https://wx2.sinaimg.cn/mw1024/a2dc7a92gy1g7867f3v0fj20hs0hsjs0.jpg" id="logo">
+    <img src="webwxgetmsgimg.jpeg" id="logo">
 </div>
 <canvas class="canvas"></canvas>
 <canvas class="canvas" id="pinkboard"></canvas>
-
+<audio autoplay="autoplay"><source src="music.mp3" /></audio>
 <script>
 var settings = {
   particles: {
@@ -309,7 +309,7 @@ var S = {
         S.Drawing.init('.canvas');
         document.body.classList.add('body--ready');
 
-        S.UI.simulate("快乐就在你心中|所以打开束缚你心灵的枷锁吧|让自己像花朵一样成长|我知道答案|张开你的翅膀|自由地飞翔吧");
+        S.UI.simulate("妹妹|与你二十余载|九载痴迷于你|余下痛苦于离|宿命中难相忘|现如今情重燃|火中蛾又何惧|愿得你一心|白首不分离|人生何其短|惟愿尽余欢|往后余生|风雪是你|平淡是你|清贫也是你|荣华是你|心底温柔是你|我爱你 妹妹|期待着 重逢|❤");
 
         var canvas = document.querySelector('.canvas');
         var context = canvas.getContext('2d');
@@ -472,7 +472,7 @@ S.UI = (function () {
                 default:
                     S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
             }
-        }, 2000, sequence.length);
+        }, 4000, sequence.length);
     }
 
     return {
